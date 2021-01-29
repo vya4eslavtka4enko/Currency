@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding:0;
+}
+.mainWindow{
+    width: 700px;
+    height: 1000px;
+    background-color:royalblue;
+    margin:10px auto;
+    box-shadow:3px 5px 13px black;
+}
+.headerCurrency{
+    text-align:center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 30px;
+    font-size:45px;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+}
+.mainCurrencyBlock{
+    
+}
+.usd, .eur, .gbr, .rub{
+    width:90%;
+    height: 100px;
+    background-color: rgb(255, 229, 173);
+    margin: 10px auto;
+}
+.usd, .eur, .gbr, .rub, span{
+    text-align:center;
+    font-size:30px;
+}
