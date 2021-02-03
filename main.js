@@ -9,8 +9,8 @@ function getDataFromServer (){
                 return;
             }          
             response.json().then(function(data){
-                reWrite(data[26].rate,data[33].rate,data[25].rate,data[18].rate);
-                console.log(data);
+                reWrite(data[26].rate,data[33].rate,data[25].rate,data[18].rate,data[26].exchangedate);
+
             })
         });
 }
@@ -19,11 +19,26 @@ let USDCurrency = document.querySelector('.USDCurrency');
 let EURCurrency = document.querySelector('.EURCurrency');
 let GBRCurrency = document.querySelector('.GBRCurrency');
 let RUBCurrency = document.querySelector('.RUBCurrency');
+let dataCurrency = document.querySelector('.dataCurrency');
+//----------- Deposit Calculate ------------
+let calculateButton = document.getElementById('calculateButton');
 
 function reWrite( ... data){
     USDCurrency.innerHTML = data[0]
     EURCurrency.innerHTML = data[1]
     GBRCurrency.innerHTML = data[2]
     RUBCurrency.innerHTML = data[3]
+    dataCurrency.innerHTML = data[4]
 }
+
+function calculateDeposit(){
+    let money = document.getElementById('money').value;
+    let month = document.getElementById('month').value/12;
+    let interest = document.getElementById('interest').value*0.01;
+    let deposit = Math.round(+money*(1+(interest)*month));
+    console.log(deposit);
+}
+calculateButton.addEventListener('click',function(){
+    calculateDeposit();
+})
 getDataFromServer();

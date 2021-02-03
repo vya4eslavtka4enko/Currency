@@ -8,27 +8,47 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="mainWindow">
+    <div class="mainContainer">
+    <div class="mainWindowCurrency">
         <div class="headerCurrency">Курс Валют</div>
+        <h4 class="dataCurrency"></h4>
         <div class="mainCurrencyBlock">
             <div class="usd">
                 <h2 class="nameCurrency">USD</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Flag_of_the_United_States_%28Pantone%29.svg" alt="">
                 <span class = "USDCurrency">0.00</span>
             </div>
             <div class="eur">
                     <h2 class="nameCurrency">EUR</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="">
                     <span class = "EURCurrency">0.00</span>
             </div>
             <div class="gbr">
                     <h2 class="nameCurrency">GBR</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png" alt="">
                     <span class = "GBRCurrency">0.00</span>
             </div>
             <div class="rub">
                     <h2 class="nameCurrency">RUB</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/250px-Flag_of_Russia.svg.png" alt="">
                     <span class = "RUBCurrency">0.00</span>
             </div>
         </div>
     </div>
+    <div class="mainWindowDeposit">
+        <h1>РАССЧЕТ ДЕПОЗИТА</h1>
+        <div>
+                <h6>Enter the amount</h6>
+                <input type="text" id = "money">
+                <h6>Enter the term</h6>
+                <input type="text" id = 'month'>
+                <h6>Enter the interest</h6>
+                <input type="text" id = "interest">
+                <button id = "calculateButton">Calculate</button>
+                <input type="text">
+        </div>
+    </div>
+</div>
 </body>
 <script src="main.js"></script>
 </html>

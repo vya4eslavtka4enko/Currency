@@ -2,11 +2,14 @@
     margin:0;
     padding:0;
 }
-.mainWindow{
+.mainContainer{
+    display: flex;
+}
+.mainWindowCurrency{
     width: 700px;
     height: 1000px;
     background-color:royalblue;
-    margin:10px auto;
+    margin:10px 100px;
     box-shadow:3px 5px 13px black;
 }
 .headerCurrency{
@@ -22,6 +25,12 @@
 .mainCurrencyBlock{
     
 }
+.dataCurrency{
+    text-align: center;
+    font-size: 30px;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+}
 .usd, .eur, .gbr, .rub{
     width:90%;
     height: 100px;
@@ -31,4 +40,62 @@
 .usd, .eur, .gbr, .rub, span{
     text-align:center;
     font-size:30px;
+}
+.usd img{
+position: absolute;
+margin-left: -250px;
+margin-top: -25px;
+    width: 100px;
+    height: auto
+}
+.eur img{
+    position: absolute;
+    margin-left: -250px;
+    margin-top: -30px;
+        width: 100px;
+        height: auto
+    }
+    .gbr img{
+        position: absolute;
+        margin-left: -250px;
+        margin-top: -30px;
+            width: 100px;
+            height: auto
+        }
+        .rub img{
+            position: absolute;
+            margin-left: -250px;
+            margin-top: -35px;
+                width: 100px;
+                height: auto
+            }
+.mainWindowDeposit{
+    width: 700px;
+    height:1000px;
+    background-color:rosybrown;
+    margin: 10px 100px;
+    box-shadow:1px 1px 10px black;
+    text-align:center;
+}
+.mainWindowDeposit div{
+    background: red;
+    width: 90%;
+    height: 40%;
+    margin: 120px auto;
+    box-shadow:4px 4px 17px black;
+}
+.mainWindowDeposit input{
+    width: 90%;
+    height: 6%;
+    outline:0;
+    font-size: 20px;
+}
+.mainWindowDeposit h6{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.mainWindowDeposit button{
+    width: 60%;
+    height: 10%;
+    margin: 10px;
 }
