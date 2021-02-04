@@ -42,3 +42,19 @@ calculateButton.addEventListener('click',function(){
     calculateDeposit();
 })
 getDataFromServer();
+//-------show interface manu-----
+let showButtonCurrency = document.querySelector('.showButtonCurrency');
+let showButtonDeposit = document.querySelector('.showButtonDeposit');
+let mainMenu = document.querySelector('.mainMenu');
+let mainWindowCurrency = document.querySelector('.mainWindowCurrency');
+let mainWindowDeposit = document.querySelector('.mainWindowDeposit');
+
+mainMenu.addEventListener('click',function(e){
+    if(e.target.className == 'showButtonCurrency'){
+            mainWindowCurrency.style.visibility = "visible";
+        
+    }else if(e.target.className == 'showButtonDeposit'){
+        mainWindowDeposit.style.visibility = "visible";
+        console.log('work');
+    }
+})

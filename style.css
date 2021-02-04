@@ -2,11 +2,39 @@
     margin:0;
     padding:0;
 }
+body{
+    display: flex;
+}
+.mainMenu{
+    display: flex;
+    flex-direction:column;
+    list-style:none;
+    background-color:blanchedalmond;
+    width:20%;
+    height:100vh;
+}
+.mainMenu li{
+    background-color:cadetblue;
+    padding: 10px 30px;
+    margin:10px;
+    text-align:center;
+}
+.mainMenu li button {
+    background:none;
+    border:none;
+    outline:0;
+    text-transform:uppercase;
+    font-family:sans-serif;
+    font-weight:900;
+    color:white;
+    text-shadow:2px 2px 4px  black;
+}
 .mainContainer{
     display: flex;
 }
 .mainWindowCurrency{
-    width: 700px;
+    visibility:hidden;
+    width: 40%;
     height: 1000px;
     background-color:royalblue;
     margin:10px 100px;
@@ -23,7 +51,7 @@
     text-shadow: 2px 2px 2px black;
 }
 .mainCurrencyBlock{
-    
+   
 }
 .dataCurrency{
     text-align: center;
@@ -42,34 +70,31 @@
     font-size:30px;
 }
 .usd img{
-position: absolute;
 margin-left: -250px;
 margin-top: -25px;
     width: 100px;
     height: auto
 }
 .eur img{
-    position: absolute;
     margin-left: -250px;
     margin-top: -30px;
         width: 100px;
         height: auto
     }
     .gbr img{
-        position: absolute;
         margin-left: -250px;
         margin-top: -30px;
             width: 100px;
             height: auto
         }
         .rub img{
-            position: absolute;
             margin-left: -250px;
             margin-top: -35px;
                 width: 100px;
                 height: auto
             }
 .mainWindowDeposit{
+ 
     width: 700px;
     height:1000px;
     background-color:rosybrown;
